@@ -8,6 +8,7 @@ import Profile from './Profile'
 import Users from "./Users"
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar'
+import LogOut from './LogOut'
 
 function MainPage() {
   let navigate = useNavigate()
@@ -26,7 +27,7 @@ function MainPage() {
 
     </AppBar>
 
-
+    <LogOut />
   </Box>
         
         

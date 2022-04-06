@@ -7,6 +7,7 @@ import "./App.css"
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar'
 import { MyContext } from './ContextProvider';
+import LogOut from './LogOut';
 
 
 function Users() {
@@ -32,6 +33,7 @@ function Users() {
           <AppBar position="static">
     <h2>User : {defaultUsers.username}</h2>
     </AppBar>
+    <LogOut />
   </Box>
    
 <div className="ag-theme-alpine" style={{height: 500, width: 1000 }}>

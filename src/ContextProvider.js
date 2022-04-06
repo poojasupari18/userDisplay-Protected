@@ -13,7 +13,7 @@ function ContextProvider(   {children}  ) {
     const onlogin = (username , password)=>{
     
         console.log(username , password)
-        if ( username === "pooja" && password === "supari"){
+        if ( username === "Admin" && password === "Admin@123"){
                setAuthenticated(true)
                setDefaultUsers({username:"pooja" , password:"supari"})
                console.log("reached")
@@ -21,9 +21,13 @@ function ContextProvider(   {children}  ) {
  
  } 
 
+ const setauthfalsein = ()=> {
+   setAuthenticated(false)
+ }
+
   return (
     <div>
-        <MyContext.Provider value = {{onlogin , authenticated  , defaultUsers}}>
+        <MyContext.Provider value = {{onlogin , authenticated  , defaultUsers ,setauthfalsein }}>
             {children}       
         </MyContext.Provider>
          

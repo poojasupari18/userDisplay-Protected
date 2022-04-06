@@ -28,3 +28,11 @@
 
   
 }
+.logout-btn{
+  position: relative;
+  left: 90%;
+  color: beige;
+  padding: 0.7em;
+  background-color: rgb(20, 156, 161);
+
+}

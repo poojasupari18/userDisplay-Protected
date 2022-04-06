@@ -17,11 +17,12 @@ function MainRouter() {
         <Routes>
             <Route  path = "/" element = {<HomePage />}/>   
             <Route  path = "/login" element = {<Login />} />   
-            <Route   path = "/mainpage" element = {<MainPage />}/>
+            
             {/* <Route  >
                <ProtectedRoute exact path = "/Users"   isauth = {false} element = {<Users />} />
                </Route> */}
             <Route  path="/"  element={<ProtectedRoute isauth={authenticated}   />} >
+            <Route   path = "/mainpage" element = {<MainPage />}/>
                 <Route  path="/users" element={<Users />} />
                 <Route  path = "/profile" element = {<Profile />}/>
             </Route>
