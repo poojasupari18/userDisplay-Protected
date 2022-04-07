@@ -1,19 +1,23 @@
 .login{
     border: white solid 1px;
     border-radius: 2%;
-    background-color: rgb(156, 174, 196);
-    
+    background-color: rgb(255, 255, 255);
+    margin: 0%;
     position: absolute;
-    left: 25%;
+    left: 50%;
+    
     top: 40%;
     transform: translate(-50%, -50%);
 }
 .login-text{
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0)
 }
 .login-form input{
-    margin: .4em;
+    margin: .5em;
    left: 10%;
+   /* width: 200px; */
+   width: 60%;
+   height: 40%;
 
 }
 
@@ -22,6 +26,7 @@
    width: 40%;
    height: 20%;
 }
-body{
+/* body{
    background-color: rgb(202, 217, 223); 
-}
+} */
+

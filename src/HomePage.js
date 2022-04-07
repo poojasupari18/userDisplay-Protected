@@ -27,7 +27,7 @@ function HomePage() {
   return  (
     <div className='homepage'>
         <h1 className='homepage-header'>Home Page</h1>
-      <Button > <Link to = "/login">Login</Link></Button>
+      <Button className='homepage-loginbtn'> <Link to = "/login">Login</Link></Button>
       
     </div>
   ) 

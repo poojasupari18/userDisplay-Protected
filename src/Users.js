@@ -35,8 +35,8 @@ function Users() {
     </AppBar>
     <LogOut />
   </Box>
-   
-<div className="ag-theme-alpine" style={{height: 500, width: 1000 }}>
+   <div className='aggrid'>
+<div className="ag-theme-alpine" style={{height: 500, width: 1500 }}>
    <AgGridReact rowData = {(newusers).map((x) => ({ 'id': x.id, 'name' : x.name , 'email': x.email , 'company': x.company}))}>
       
        <AgGridColumn field="id"></AgGridColumn>
@@ -45,6 +45,7 @@ function Users() {
       <AgGridColumn field="company"></AgGridColumn>
    </AgGridReact>
    </div> 
+    </div>
     </div>
   )
 }
